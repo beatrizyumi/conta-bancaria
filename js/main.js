@@ -2,7 +2,10 @@ var saldo = parseFloat(document.querySelector('.saldo').innerText);
 var valor = parseFloat(document.querySelector('.quantia').value);
 
 function retirada() {
-    valor = parseFloat(document.querySelector('.quantia').value);
+    if (isNaN(parseFloat(document.querySelector('.quantia').value))) {
+        alert('Valor nao valido, incluir um numero');
+        valor=0;
+    } else { valor = parseFloat(document.querySelector('.quantia').value)};
 	if (valor > saldo) {
         console.log('Nao e permitido');
         console.log('Seu saldo e ' + saldo);
@@ -20,7 +23,10 @@ function retirada() {
 }
 
 function deposito() {
-    valor = parseFloat(document.querySelector('.quantia').value);
+    if (isNaN(parseFloat(document.querySelector('.quantia').value))) {
+        alert('Valor nao valido, incluir um numero');
+        valor=0;
+    } else { valor = parseFloat(document.querySelector('.quantia').value)};
 	saldo = saldo + valor;
     document.querySelector('.saldo').innerText = saldo;
 	console.log('Deposito realizado com sucesso');
