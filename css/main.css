@@ -1,0 +1,43 @@
+body {
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.conta {
+	padding-top: 20px;
+}
+
+.input {
+	padding-top: 20px;
+}
+
+.conta-corrente {
+	padding: 20px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.conta-poupanca {
+	padding: 20px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.saldo.verde {
+	color: green;
+}
+
+.saldo.vermelho {
+	color: red;
+}
+
+.saldo-poupanca.verde {
+	color: green;
+}
+
+.saldo-poupanca.vermelho {
+	color: red;
+}

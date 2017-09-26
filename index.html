@@ -3,12 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Conta Bancaria</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<span>Seu saldo e de R$</span><span class="saldo">100</span>
+	<div class="conta">
+	<span class="texto">Seu saldo em conta corrente e de </span><span class="saldo"></span>
+	</div>
+	<div class="conta">
+	<span clas="texto">Seu saldo em conta poupanca e de </span><span class="saldo-poupanca"></span>
+	</div>
+	<div class="input">
 	<input type="text" class="quantia">
+	</div>
+	<div class="conta-corrente">
 	<button class="depositar">Depositar</button>
 	<button class="sacar">Sacar</button>
+	<h2>Extrato da Conta Bancária</h2>
+	<ul class="historico">
+	</ul>
+	</div>
+	<div class="conta-poupanca">
+	<button class="depositar">Depositar na Poupança</button>
+	<button class="sacar">Sacar da Poupança</button>
+	<h2>Extrato da Conta Poupança</h2>
+	<ul class="historico-poupanca">
+	</ul>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
